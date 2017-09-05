@@ -1,0 +1,154 @@
+/*
+ * for smartphone screen (iPhone, etc.)
+ *
+ */
+
+@media screen and (max-width: 700px) {
+    #name {
+	font-size: 30px;
+    }
+    .container {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    }
+    .container > div {
+	max-width: 70%;
+	padding-bottom: 10px;
+    }
+    .project-title {
+	color: #7d97ad;
+	font-size: 25px;
+	padding-bottom: 10px;
+    }
+    .project-name {
+	color: #2d3c49;
+	font-size: 25px;
+    }
+    .project-url {
+	color: #2d3c49;
+	font-size: 12px;
+    }
+}
+
+/*
+ * for tablet screen (iPad, etc.)
+ *
+ */
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    #name {
+	font-size: 40px;
+    }
+    .container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	text-align: center;
+    }
+    .item {
+	max-width: 32%;
+    }
+    .project-title {
+	color: #7d97ad;
+	font-size: 25px;
+	padding-bottom: 10px;
+    }
+    .project-name {
+	color: #2d3c49;
+	font-size: 25px;
+    }
+    .project-url {
+	color: #2d3c49;
+	font-size: 12px;
+    }
+}
+
+/*
+ * for computer screen
+ *
+ */
+
+@media screen and (min-width: 901px) {
+    body {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+    }
+    #name {
+	font-size: 50px;
+    }
+    .container {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+    }
+    .item {
+	max-width: 31%;
+    }
+    .project-title {
+	color: #7d97ad;
+	font-size: 30px;
+	padding-bottom: 10px;
+    }
+    .project-name {
+	color: #2d3c49;
+	font-size: 30px;
+    }
+    .project-url {
+	color: #2d3c49;
+	font-size: 14px;
+    }
+}
+
+/*
+ * platform independent settings
+ *
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+    display: block;
+}
+
+/* TODO: example of action items */
+
+header {
+    background: no-repeat top 10px left/70px url("../img/udacity.svg");
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    border-bottom: 3px solid #7d97ad;
+    padding-bottom: 30px;
+}
+
+body {
+    color: #2d3c49;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+}
+
+article {
+}
+
+a {
+    text-decoration: none;
+}
+
+#name-title {
+    font-size: 20px;
+}
+
+#banner-image {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
