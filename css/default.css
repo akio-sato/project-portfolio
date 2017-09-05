@@ -5,26 +5,22 @@
 
 @media screen and (max-width: 767px) {
     header {
-	background: no-repeat top 0 left/70px url(../img/logo.svg);
+	background: no-repeat top left/70px url(../img/logo.svg);
     }
 
     body {
 	margin: 1em;
     }
 
-    h1 {
-	font-size: 25px;
-    }
-
-    #name {
+    .name {
 	font-size: 30px;
     }
 
-    #name-title {
+    .name-title {
 	font-size: 20px;
     }
 
-    #banner-image {
+    .banner-image {
 	padding: 30px 0 10px;
     }
 
@@ -33,9 +29,13 @@
 	justify-content: center;
     }
 
-    .container > div {
+    .item {
 	max-width: 70%;
 	padding-bottom: 10px;
+    }
+
+    .project-title {
+	font-size: 25px;
     }
 
     .project-name {
@@ -61,19 +61,15 @@
 	margin: 1em;
     }
 
-    h1 {
-	font-size: 25px;
-    }
-
-    #name {
+    .name {
 	font-size: 40px;
     }
 
-    #name-title {
+    .name-title {
 	font-size: 20px;
     }
 
-    #banner-image {
+    .banner-image {
 	padding: 30px 0 10px;
     }
 
@@ -83,6 +79,10 @@
 
     .item {
 	max-width: 32%;
+    }
+
+    .project-title {
+	font-size: 25px;
     }
 
     .project-name {
@@ -109,20 +109,16 @@
 	margin: 2em auto;
     }
 
-    h1 {
-	font-size: 30px;
-    }
-
-    #name {
+    .name {
 	font-size: 50px;
     }
 
-    #name-title {
+    .name-title {
 	font-size: 20px;
     }
 
-    #banner-image {
-	padding: 30px 0 10px;
+    .banner-image {
+	padding: 30px 0 20px;
     }
 
     .container {
@@ -131,6 +127,10 @@
 
     .item {
 	max-width: 31%;
+    }
+
+    .project-title {
+	font-size: 30px;
     }
 
     .project-name {
@@ -147,37 +147,29 @@
  *
  */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
-img, embed, object, video {
-    max-width: 100%;
-}
-
-article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+article,
+section,
+aside,
+hgroup,
+nav,
+header,
+footer,
+figure,
+figcaption {
     display: block;
 }
 
-header {
-    font-family: 'Raleway', sans-serif;
-    text-align: right;
-    border-bottom: 3px solid #7d97ad;
-    padding-bottom: 30px;
-}
-
-body {
-    color: #2d3c49;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* TODO: example of action items */
-
-footer {
-}
-
-h1 {
-    color: #7d97ad;
+img,
+embed,
+object,
+video {
+    max-width: 100%;
 }
 
 a {
@@ -186,9 +178,30 @@ a {
     min-width: 48px;
 }
 
+header {
+    font-family: "Raleway", sans-serif;
+    text-align: right;
+    border-bottom: 3px solid #7d97ad;
+    padding-bottom: 30px;
+}
+
+body {
+    color: #2d3c49;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* TODO: example of action items */
+
+footer {
+}
+
 .container {
     display: flex;
     text-align: center;
+}
+
+.project-title {
+    color: #7d97ad;
 }
 
 .project-name {
