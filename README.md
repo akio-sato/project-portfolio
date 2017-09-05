@@ -8,7 +8,7 @@ N/A
 
 ## Usage
 
-Open [index.html](index.html) in a browser.
+Open [index.html](index.html) in a web browser.
 
 ## License
 
