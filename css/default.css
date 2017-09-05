@@ -178,6 +178,10 @@ a {
     min-width: 48px;
 }
 
+a:hover {
+    opacity: 0.6;
+}
+
 header {
     font-family: "Raleway", sans-serif;
     text-align: right;
